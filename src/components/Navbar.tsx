@@ -40,7 +40,7 @@ function useVisitorCount() {
   useEffect(() => {
     const fetchVisitorCount = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api', {
+        const response = await fetch('/api', {
           next: { revalidate: 259200 }, // Revalidate every 3 days
         });
         const data = await response.json();
