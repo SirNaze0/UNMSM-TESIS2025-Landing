@@ -5,7 +5,7 @@ import { ChevronRight, Mail } from 'lucide-react';
 export const TeacherSection = () => {
   return (
     <section id="docente" className="bg-gray-50 py-16 pt-24">
-      <div className="container mx-auto px-4">
+      <div className="container max-w-[1200px] mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
           <div className="inline-block rounded-full bg-[#c1ff72] px-4 py-1 text-sm font-medium">
             Docente

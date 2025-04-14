@@ -21,7 +21,7 @@ html {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --container-2xl: 1400px;
+    /* --container-2xl: 1400px; */
   }
 }
 

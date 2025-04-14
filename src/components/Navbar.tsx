@@ -78,7 +78,7 @@ export const Navbar = () => {
     }
   };
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm w-full">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm w-full md:px-20">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href={'/'} className="flex items-center">
           <Image

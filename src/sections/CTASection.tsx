@@ -3,7 +3,7 @@ import { ChevronRight } from 'lucide-react';
 
 export const CTASection = () => {
   return (
-    <section className="container mx-auto px-4 py-16 pt-24">
+    <section className="container max-w-[1200px] mx-auto px-4 py-16 pt-24">
       <div className="rounded-2xl bg-[#d8ffaa] p-8 md:p-12">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold text-black">

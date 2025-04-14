@@ -51,7 +51,7 @@ const topics = [
 
 export const AboutSection = () => {
   return (
-    <section id="sobre" className="container mx-auto px-4 py-16 pt-24">
+    <section id="sobre" className="container max-w-[1200px] mx-auto px-4 py-16 pt-24">
       <div className="mx-auto max-w-3xl text-center">
         <div className="inline-block rounded-full bg-[#c1ff72] px-4 py-1 text-sm font-medium">
           Descripción
