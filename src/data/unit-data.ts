@@ -88,7 +88,7 @@ export const programData: UnitData[] = [
     columns: 3,
   },
   {
-    title: '',
+    title: 'Evaluación Parcial',
     weeks: [
       {
         weekNumber: 8,
