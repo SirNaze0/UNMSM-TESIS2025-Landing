@@ -30,7 +30,7 @@ export const HeroSection = () => {
       <div className="relative flex items-center justify-center">
         <div className="relative z-10">
           <Image
-            src="https://i.ibb.co/pBvVWYfD/Chat-GPT-Image-Apr-14-2025-11-45-34-AM.png"
+            src={'/hero.png'}
             width={400}
             height={400}
             alt="Inteligencia Artificial"

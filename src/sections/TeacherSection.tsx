@@ -13,10 +13,10 @@ export const TeacherSection = () => {
           <h2 className="mt-4 text-3xl font-bold">Información del Docente</h2>
         </div>
 
-        <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8">
+        <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="w-48 h-48 rounded-full overflow-hidden">
             <Image
-              src="https://i.ibb.co/mVysPmDp/Captura-de-pantalla-2025-04-14-111541-1.png"
+              src={'/guerrabarrasv2.png'}
               alt="GUERRA GRADOS, LUIS ANGEL"
               width={200}
               height={200}
