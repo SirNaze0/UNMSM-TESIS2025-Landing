@@ -3,6 +3,14 @@ import { WeekCard } from '@/components/WeekCard';
 import { programData } from '@/data/unit-data';
 
 export const ProgramSection = () => {
+  // Agregamos esto porque no funcionan los estilos computados
+  const gridColumnClasses: { [key: number]: string } = {
+    1: 'grid grid-cols-1 md:grid-cols-1 gap-6',
+    2: 'grid grid-cols-1 md:grid-cols-2 gap-6',
+    3: 'grid grid-cols-1 md:grid-cols-3 gap-6',
+    4: 'grid grid-cols-1 md:grid-cols-4 gap-6',
+  };
+
   return (
     <section id="programa" className="container mx-auto px-4 py-16 pt-24">
       <div className="mx-auto max-w-3xl text-center">
@@ -24,9 +32,9 @@ export const ProgramSection = () => {
             {unit.title && (
               <UnitSection title={unit.title}>
                 <div
-                  className={`grid grid-cols-1 md:grid-cols-${
-                    unit.columns || 1
-                  } gap-6`}
+                  className={
+                    gridColumnClasses[unit.columns] || gridColumnClasses[1]
+                  }
                 >
                   {unit.weeks.map((week, weekIndex) => (
                     <WeekCard
@@ -46,9 +54,9 @@ export const ProgramSection = () => {
             {!unit.title && (
               <div>
                 <div
-                  className={`grid grid-cols-1 md:grid-cols-${
-                    unit.columns || 1
-                  } gap-6`}
+                  className={
+                    gridColumnClasses[unit.columns] || gridColumnClasses[1]
+                  }
                 >
                   {unit.weeks.map((week, weekIndex) => (
                     <WeekCard

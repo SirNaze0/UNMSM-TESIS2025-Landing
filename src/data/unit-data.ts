@@ -3,7 +3,7 @@ import { WeekCardProps } from '@/components/WeekCard';
 interface UnitData {
   title: string;
   weeks: WeekCardProps[];
-  columns?: number;
+  columns: number;
   hasGroup?: boolean;
 }
 
