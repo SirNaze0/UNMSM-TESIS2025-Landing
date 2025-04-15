@@ -12,7 +12,7 @@ export const ProgramSection = () => {
   };
 
   return (
-    <section id="programa" className="container max-w-[1200px] mx-auto px-4 py-16 pt-24">
+    <section id="programa" className="container max-w-[1150px] mx-auto px-4 py-16 pt-24">
       <div className="mx-auto max-w-3xl text-center">
         <div className="inline-block rounded-full bg-[#c1ff72] px-4 py-1 text-sm font-medium">
           Cronograma
