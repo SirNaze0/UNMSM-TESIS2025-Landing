@@ -23,10 +23,10 @@ export const TeacherSection = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="max-w-md">
+          <div className="max-w-md text-center md:text-left">
             <h3 className="text-2xl font-bold">GUERRA GRADOS, LUIS ANGEL</h3>
             <div className="mt-4 space-y-2">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center md:justify-normal gap-2">
                 <Mail className="h-5 w-5 text-[#c1ff72]" />
                 <p className="text-gray-600">lguerrag1@unmsm.edu.pe</p>
               </div>
