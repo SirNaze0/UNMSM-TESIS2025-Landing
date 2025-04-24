@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import AOSProvider from '../components/AOSProvider';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -64,11 +65,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className='custom-scrollbar'>
+    <html lang="en" className="custom-scrollbar">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AOSProvider>{children}</AOSProvider>
       </body>
     </html>
   );

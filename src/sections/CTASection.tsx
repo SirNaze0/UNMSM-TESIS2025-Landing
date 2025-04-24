@@ -3,8 +3,15 @@ import { ChevronRight } from 'lucide-react';
 
 export const CTASection = () => {
   return (
-    <section className="container max-w-[1150px] mx-auto px-4 py-16 pt-24">
-      <div className="rounded-2xl bg-[#d8ffaa] p-8 md:p-12">
+    <section
+      className="container max-w-[1150px] mx-auto px-4 py-16 pt-24"
+      data-aos="fade-up"
+    >
+      <div
+        className="rounded-2xl bg-[#d8ffaa] p-8 md:p-12"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold text-black">
             Conoce a tu Grupo de Trabajo
@@ -14,7 +21,7 @@ export const CTASection = () => {
             proyectos asignados en el documento compartido. Allí encontrarás
             todos los detalles necesarios para coordinar con tu equipo.
           </p>
-          <div className="mt-8">
+          <div className="mt-8" data-aos="fade-up" data-aos-delay="200">
             <Link
               href="https://docs.google.com/spreadsheets/d/1NzHW1RoytIM2Jzhz6YZdyVffpY3kcYYvDvgebaV7clM/edit?gid=0#gid=0"
               target="_blank"
