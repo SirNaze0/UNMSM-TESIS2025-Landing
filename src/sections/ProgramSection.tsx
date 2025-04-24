@@ -12,8 +12,11 @@ export const ProgramSection = () => {
   };
 
   return (
-    <section id="programa" className="container max-w-[1150px] mx-auto px-4 py-16 pt-24">
-      <div className="mx-auto max-w-3xl text-center">
+    <section
+      id="programa"
+      className="container max-w-[1150px] mx-auto px-4 py-16 pt-24"
+    >
+      <div className="mx-auto max-w-3xl text-center" data-aos="fade-up">
         <div className="inline-block rounded-full bg-[#c1ff72] px-4 py-1 text-sm font-medium">
           Cronograma
         </div>
@@ -28,7 +31,7 @@ export const ProgramSection = () => {
 
       <div className="mt-12 space-y-12">
         {programData.map((unit, index) => (
-          <div key={index}>
+          <div key={index} data-aos="fade-up" data-aos-delay={index * 100}>
             {unit.title && (
               <UnitSection title={unit.title}>
                 <div
@@ -37,16 +40,21 @@ export const ProgramSection = () => {
                   }
                 >
                   {unit.weeks.map((week, weekIndex) => (
-                    <WeekCard
+                    <div
                       key={weekIndex}
-                      weekNumber={week.weekNumber}
-                      title={week.title}
-                      description={week.description}
-                      variant={week.variant}
-                      hasGroup={week.hasGroup}
-                      groupNumber={week.groupNumber}
-                      groupLink={week.groupLink}
-                    />
+                      data-aos="fade-up"
+                      data-aos-delay={weekIndex * 200}
+                    >
+                      <WeekCard
+                        weekNumber={week.weekNumber}
+                        title={week.title}
+                        description={week.description}
+                        variant={week.variant}
+                        hasGroup={week.hasGroup}
+                        groupNumber={week.groupNumber}
+                        groupLink={week.groupLink}
+                      />
+                    </div>
                   ))}
                 </div>
               </UnitSection>
@@ -59,14 +67,19 @@ export const ProgramSection = () => {
                   }
                 >
                   {unit.weeks.map((week, weekIndex) => (
-                    <WeekCard
+                    <div
                       key={weekIndex}
-                      weekNumber={week.weekNumber}
-                      title={week.title}
-                      description={week.description}
-                      variant={week.variant}
-                      hasGroup={week.hasGroup}
-                    />
+                      data-aos="fade-up"
+                      data-aos-delay={weekIndex * 200}
+                    >
+                      <WeekCard
+                        weekNumber={week.weekNumber}
+                        title={week.title}
+                        description={week.description}
+                        variant={week.variant}
+                        hasGroup={week.hasGroup}
+                      />
+                    </div>
                   ))}
                 </div>
               </div>

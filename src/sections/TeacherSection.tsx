@@ -4,9 +4,9 @@ import { ChevronRight, Mail } from 'lucide-react';
 
 export const TeacherSection = () => {
   return (
-    <section id="docente" className="bg-gray-50 py-16 pt-24">
+    <section id="docente" className="bg-gray-50 py-16 pt-24" data-aos="fade-up">
       <div className="container max-w-[1150px] mx-auto px-4">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-3xl text-center" data-aos="fade-up">
           <div className="inline-block rounded-full bg-[#c1ff72] px-4 py-1 text-sm font-medium">
             Docente
           </div>
@@ -14,7 +14,11 @@ export const TeacherSection = () => {
         </div>
 
         <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-12">
-          <div className="w-48 h-48 rounded-full overflow-hidden">
+          <div
+            className="w-48 h-48 rounded-full overflow-hidden"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
             <Image
               src={'/guerrabarrasv2.png'}
               alt="GUERRA GRADOS, LUIS ANGEL"
@@ -23,7 +27,11 @@ export const TeacherSection = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="max-w-md text-center md:text-left">
+          <div
+            className="max-w-md text-center md:text-left"
+            data-aos="fade"
+            data-aos-delay="200"
+          >
             <h3 className="text-2xl font-bold">GUERRA GRADOS, LUIS ANGEL</h3>
             <div className="mt-4 space-y-2">
               <div className="flex items-center justify-center md:justify-normal gap-2">

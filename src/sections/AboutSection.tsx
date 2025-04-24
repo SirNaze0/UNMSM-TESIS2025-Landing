@@ -51,8 +51,11 @@ const topics = [
 
 export const AboutSection = () => {
   return (
-    <section id="sobre" className="container max-w-[1200px] mx-auto px-4 py-16 pt-24">
-      <div className="mx-auto max-w-3xl text-center">
+    <section
+      id="sobre"
+      className="container max-w-[1200px] mx-auto px-4 py-16 pt-24"
+    >
+      <div className="mx-auto max-w-3xl text-center" data-aos="fade-up">
         <div className="inline-block rounded-full bg-[#c1ff72] px-4 py-1 text-sm font-medium">
           Descripción
         </div>
@@ -65,13 +68,14 @@ export const AboutSection = () => {
       </div>
 
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 select-none">
-        {topics.map((topic) => (
-          <TopicCard
-            key={topic.number}
-            number={topic.number}
-            title={topic.title}
-            description={topic.description}
-          />
+        {topics.map((topic, idx) => (
+          <div key={topic.number} data-aos="fade-up" data-aos-delay={idx * 150}>
+            <TopicCard
+              number={topic.number}
+              title={topic.title}
+              description={topic.description}
+            />
+          </div>
         ))}
       </div>
     </section>
