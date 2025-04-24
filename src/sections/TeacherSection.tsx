@@ -20,7 +20,7 @@ export const TeacherSection = () => {
             data-aos-delay="100"
           >
             <Image
-              src={'/guerrabarrasv2.png'}
+              src={'/guerrita.png'}
               alt="GUERRA GRADOS, LUIS ANGEL"
               width={200}
               height={200}
