@@ -8,7 +8,7 @@ export const HeroSection = () => {
       id="hero"
       className="container max-w-[1150px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-4 py-16 pt-24"
     >
-      <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
+      <div className="flex flex-col justify-center space-y-6 text-center lg:text-left lg:pl-16 xl:pl-0">
         <h1
           className="text-4xl sm:text-5xl font-bold leading-tight bg-gradient-to-r from-gray-600 via-[#83c53c] to-[#c1ff72] bg-clip-text text-transparent"
           data-aos="fade-up"
