@@ -39,7 +39,7 @@ export const HeroSection = () => {
       >
         <div className="relative z-10">
           <Image
-            src={'/hero.png'}
+            src={'/tesis.png'}
             width={400}
             height={400}
             alt="Inteligencia Artificial"
