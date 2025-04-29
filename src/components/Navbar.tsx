@@ -78,7 +78,7 @@ export const Navbar = () => {
     }
   };
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm w-full lg:px-20 xl:px-70">
+    <header className="sticky top-0 z-50 bg-sky-50 backdrop-blur-sm border-b border-sky-200 shadow-sm w-full lg:px-20 xl:px-70 text-sky-900">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href={'/'} className="flex items-center">
           <Image
@@ -86,16 +86,19 @@ export const Navbar = () => {
             alt="UNMSM Logo"
             width={160}
             height={80}
+            className="hover:opacity-90 transition-opacity"
           />
         </Link>
-        <nav className="hidden md:flex md items-center gap-4 lg:gap-8">
+        
+        {/* Menú para escritorio */}
+        <nav className="hidden md:flex items-center gap-2 lg:gap-4">
           <Link
             href="#"
             onClick={(e) => scrollToSection(e, 'hero')}
-            className={`text-sm transition-colors px-3 py-1 rounded-full ${
+            className={`text-sm font-medium transition-all px-4 py-2 rounded-full ${
               activeSection === 'hero'
-                ? 'bg-[#c1ff72]'
-                : 'hover:bg-[#c1ff72]/50'
+                ? 'text-primary font-bold border-b-2 border-primary'
+                : 'hover:bg-gray-100'
             }`}
           >
             Inicio
@@ -103,10 +106,10 @@ export const Navbar = () => {
           <Link
             href="#sobre"
             onClick={(e) => scrollToSection(e, 'sobre')}
-            className={`text-sm transition-colors px-3 py-1 rounded-full ${
+            className={`text-sm font-medium transition-all px-4 py-2 rounded-full ${
               activeSection === 'sobre'
-                ? 'bg-[#c1ff72]'
-                : 'hover:bg-[#c1ff72]/50'
+                ? 'text-primary font-bold border-b-2 border-primary'
+                : 'hover:bg-gray-100'
             }`}
           >
             Sobre el Curso
@@ -114,10 +117,10 @@ export const Navbar = () => {
           <Link
             href="#programa"
             onClick={(e) => scrollToSection(e, 'programa')}
-            className={`text-sm transition-colors px-3 py-1 rounded-full ${
+            className={`text-sm font-medium transition-all px-4 py-2 rounded-full ${
               activeSection === 'programa'
-                ? 'bg-[#c1ff72]'
-                : 'hover:bg-[#c1ff72]/50'
+                ? 'text-primary font-bold border-b-2 border-primary'
+                : 'hover:bg-gray-100'
             }`}
           >
             Programa
@@ -125,31 +128,97 @@ export const Navbar = () => {
           <Link
             href="#docente"
             onClick={(e) => scrollToSection(e, 'docente')}
-            className={`text-sm transition-colors px-3 py-1 rounded-full ${
+            className={`text-sm font-medium transition-all px-4 py-2 rounded-full ${
               activeSection === 'docente'
-                ? 'bg-[#c1ff72]'
-                : 'hover:bg-[#c1ff72]/50'
+                ? 'text-primary font-bold border-b-2 border-primary'
+                : 'hover:bg-gray-100'
             }`}
           >
             Docente
           </Link>
-          {/* <Link
-            href="#contacto"
-            onClick={(e) => scrollToSection(e, 'contacto')}
-            className={`text-sm transition-colors px-3 py-1 rounded-full ${
-              activeSection === 'contacto'
-                ? 'bg-[#c1ff72]'
-                : 'hover:bg-[#c1ff72]/50'
-            }`}
-          >
-            Contacto
-          </Link> */}
         </nav>
-        <div className="flex items-center gap-2">
-          <div className="text-sm text-gray-600">Visitantes:</div>
-          <div className="rounded-full bg-[#c1ff72] px-4 py-2 text-sm font-medium">
+        
+        {/* Menú móvil */}
+        <div className="md:hidden">
+          <button
+            onClick={() => document.getElementById('mobile-menu')?.classList.toggle('hidden')}
+            className="p-2 rounded-md hover:bg-gray-100"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="4" x2="20" y1="12" y2="12"></line>
+              <line x1="4" x2="20" y1="6" y2="6"></line>
+              <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        
+        <div className="flex items-center gap-3">
+          <div className="text-sm font-medium text-gray-700 hidden sm:block">Visitantes:</div>
+          <div className="rounded-full bg-white px-4 py-2 text-sm font-medium text-primary border border-primary shadow-md">
             {visitorCount.toLocaleString()}
           </div>
+        </div>
+      </div>
+      
+      {/* Menú móvil desplegable */}
+      <div id="mobile-menu" className="hidden md:hidden bg-white border-t border-gray-100 py-4 px-4 shadow-lg">
+        <div className="flex flex-col space-y-3">
+          <Link
+            href="#"
+            onClick={(e) => {
+              scrollToSection(e, 'hero');
+              document.getElementById('mobile-menu')?.classList.add('hidden');
+            }}
+            className={`text-sm font-medium transition-all px-4 py-3 rounded-md ${
+              activeSection === 'hero'
+                ? 'text-primary font-bold border-b-2 border-primary'
+                : 'hover:bg-gray-100'
+            }`}
+          >
+            Inicio
+          </Link>
+          <Link
+            href="#sobre"
+            onClick={(e) => {
+              scrollToSection(e, 'sobre');
+              document.getElementById('mobile-menu')?.classList.add('hidden');
+            }}
+            className={`text-sm font-medium transition-all px-4 py-3 rounded-md ${
+              activeSection === 'sobre'
+                ? 'text-primary font-bold border-b-2 border-primary'
+                : 'hover:bg-gray-100'
+            }`}
+          >
+            Sobre el Curso
+          </Link>
+          <Link
+            href="#programa"
+            onClick={(e) => {
+              scrollToSection(e, 'programa');
+              document.getElementById('mobile-menu')?.classList.add('hidden');
+            }}
+            className={`text-sm font-medium transition-all px-4 py-3 rounded-md ${
+              activeSection === 'programa'
+                ? 'text-primary font-bold border-b-2 border-primary'
+                : 'hover:bg-gray-100'
+            }`}
+          >
+            Programa
+          </Link>
+          <Link
+            href="#docente"
+            onClick={(e) => {
+              scrollToSection(e, 'docente');
+              document.getElementById('mobile-menu')?.classList.add('hidden');
+            }}
+            className={`text-sm font-medium transition-all px-4 py-3 rounded-md ${
+              activeSection === 'docente'
+                ? 'text-primary font-bold border-b-2 border-primary'
+                : 'hover:bg-gray-100'
+            }`}
+          >
+            Docente
+          </Link>
         </div>
       </div>
     </header>
