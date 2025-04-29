@@ -1,23 +1,26 @@
 import { ChevronRight } from 'lucide-react';
 
+export interface GroupInfo {
+  groupNumber: string;
+  groupLink: string;
+}
+
 export interface WeekCardProps {
   weekNumber: number;
   title: string;
   description: string;
-  groupNumber?: number;
   variant?: 'light' | 'dark' | 'green' | 'white';
   hasGroup?: boolean;
-  groupLink?: string;
+  groups?: GroupInfo[]; // Lista de grupos con su link
 }
 
 export const WeekCard = ({
   weekNumber,
   title,
   description,
-  groupNumber,
   variant = 'light',
   hasGroup = true,
-  groupLink = '#',
+  groups = [],
 }: WeekCardProps) => {
   const variants = {
     light: 'bg-gradient-to-br from-blue-50 to-white text-black border-blue-200',
@@ -65,17 +68,21 @@ export const WeekCard = ({
         <p className={`mt-3 ${descriptionVariants[variant]}`}>
           {description}
         </p>
-        
-{weekNumber === 6 && (
-          <a
-            href="https://drive.google.com/file/d/1lv2_I22k4rP4433JHgUJZi4U7JdBROvP/view"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`mt-5 inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-medium transition-all shadow-sm ${buttonVariants[variant]} group-hover:shadow-md`}
-          >
-            Ver Tesis de Yaipén Diaz, Imanol Alberto
-            <ChevronRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
-          </a>
+        {hasGroup && groups.length > 0 && (
+          <div className="mt-4 space-y-2">
+            {groups.map((group, index) => (
+              <a
+                key={index}
+                href={group.groupLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`mt-5 inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-medium transition-all shadow-sm ${buttonVariants[variant]} group-hover:shadow-md`}
+              >
+                Ver Tesis de {group.groupNumber}
+                <ChevronRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
+              </a>
+            ))}
+          </div>
         )}
       </div>
     </div>

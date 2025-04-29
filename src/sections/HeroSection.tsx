@@ -62,14 +62,13 @@ export const HeroSection = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-sky-200 rounded-2xl transform rotate-6 scale-105"></div>
             <Image
-              src={'/hero.png'}
+              src={'/tesis.png'}
               width={450}
               height={450}
               alt="Metodología de Tesis"
               className="rounded-2xl shadow-xl relative z-10"
             />
           </div>
-          
           <div
             className="absolute -right-6 -top-6 flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-r from-secondary to-secondary-dark shadow-lg"
             data-aos="fade"

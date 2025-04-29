@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     title: 'Curso de Metodología de la elaboración de tesis | UNMSM',
     description:
       'Aprende el desarrollo del proyecto de tesis, definiendo el tema, desarrollando si fuera necesario el marco teórico y realizando la investigación del estado del arte del problema de investigación.',
-    images: ['/guerrabarrasv2.png'],
+    images: ['/guerrita.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Curso de Metodología de la elaboración de tesis | UNMSM',
     description:
       'Aprende el desarrollo del proyecto de tesis, definiendo el tema, desarrollando si fuera necesario el marco teórico y realizando la investigación del estado del arte del problema de investigación.',
-    images: ['/guerrabarrasv2.png'],
+    images: ['/guerrita.png'],
   },
   icons: {
     icon: '/logounmsm.svg',

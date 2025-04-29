@@ -66,7 +66,8 @@ export const programData: UnitData[] = [
         description:
           'Aplicación de inteligencia artificial en la selección de artículos académicos (análisis de títulos y resúmenes), estructuración formal de papers, estrategias para lectura crítica y síntesis efectiva de contenidos. Metodología para elaborar informes de revisión documental con rigor académico.',
         variant: 'dark',
-        hasGroup: false,
+        hasGroup: true,
+        groups: [{groupNumber:'Yaipén Diaz, Imanol Alberto',groupLink:'https://drive.google.com/file/d/1lv2_I22k4rP4433JHgUJZi4U7JdBROvP/view?usp=sharing'},],
       },
       {
         weekNumber: 7,
@@ -133,9 +134,7 @@ export const programData: UnitData[] = [
         description:
           'Lineamientos para la organización formal de la tesis (componentes y secuencia), aplicación de normas APA, y técnicas de redacción científica para las secciones de introducción, marco teórico y estado del arte.',
         variant: 'green',
-        hasGroup: true,
-        groupNumber: 6,
-        groupLink: 'https://www.google.com/',
+        hasGroup: false,
       },
       {
         weekNumber: 14,
@@ -143,9 +142,7 @@ export const programData: UnitData[] = [
         description:
           'Evaluación de capítulos iniciales (1-3), uso de IA para optimizar redacción científica, gestión de referencias bibliográficas y definición del aporte investigativo. Metodología para garantizar coherencia y rigor en el desarrollo del trabajo.',
         variant: 'green',
-        hasGroup: true,
-        groupNumber: 4,
-        groupLink: 'https://www.google.com/',
+        hasGroup: false,
       },
       {
         weekNumber: 15,
@@ -153,9 +150,7 @@ export const programData: UnitData[] = [
         description:
           'Análisis integral de los capítulos 1 al 3, retroalimentación sobre el aporte investigativo y pautas para la evaluación final. Estrategias para asegurar el cumplimiento de los estándares académicos y la originalidad del trabajo.',
         variant: 'green',
-        hasGroup: true,
-        groupNumber: 7,
-        groupLink: 'https://www.google.com/',
+        hasGroup: false,
       },
     ],
     columns: 3,
