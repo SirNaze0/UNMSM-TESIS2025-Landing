@@ -50,8 +50,7 @@ export const ProgramSection = () => {
                         description={week.description}
                         variant={week.variant}
                         hasGroup={week.hasGroup}
-                        groupNumber={week.groupNumber}
-                        groupLink={week.groupLink}
+                        groups={week.groups}
                       />
                     </div>
                   ))}

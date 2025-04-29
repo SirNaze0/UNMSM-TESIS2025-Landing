@@ -1,23 +1,26 @@
 import { ChevronRight } from 'lucide-react';
 
+export interface GroupInfo {
+  groupNumber: string;
+  groupLink: string;
+}
+
 export interface WeekCardProps {
   weekNumber: number;
   title: string;
   description: string;
-  groupNumber?: number;
   variant?: 'light' | 'dark' | 'green' | 'white';
   hasGroup?: boolean;
-  groupLink?: string;
+  groups?: GroupInfo[]; // Lista de grupos con su link
 }
 
 export const WeekCard = ({
   weekNumber,
   title,
   description,
-  groupNumber,
   variant = 'light',
   hasGroup = true,
-  groupLink = '#',
+  groups = [],
 }: WeekCardProps) => {
   const variants = {
     light: 'bg-gray-50 text-black border-gray-200',
@@ -61,16 +64,21 @@ export const WeekCard = ({
         <p className={`mt-2 text-sm ${descriptionVariants[variant]}`}>
           {description}
         </p>
-        {hasGroup && (
-          <a
-            href={groupLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`mt-4 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs transition-colors ${buttonVariants[variant]}`}
-          >
-            Ver Grupo {groupNumber || weekNumber}
-            <ChevronRight className="h-3 w-3" />
-          </a>
+        {hasGroup && groups.length > 0 && (
+          <div className="mt-4 space-y-2">
+            {groups.map((group, index) => (
+              <a
+                key={index}
+                href={group.groupLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs transition-colors ${buttonVariants[variant]}`}
+              >
+                Ver Tesis de {group.groupNumber}
+                <ChevronRight className="h-3 w-3" />
+              </a>
+            ))}
+          </div>
         )}
       </div>
     </div>
