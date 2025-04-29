@@ -24,8 +24,7 @@ export const ProgramSection = () => {
           Programa del Curso y Temas por Semana
         </h2>
         <p className="mt-4 text-gray-600">
-          Selecciona una semana para ver el contenido completo y conocer los
-          grupos de trabajo especializados.
+          Selecciona una semana para ver el contenido completo.
         </p>
       </div>
 

@@ -25,27 +25,21 @@ export const TopicCard: React.FC<TopicCardProps> = ({
 const topics = [
   {
     number: 1,
-    title: 'Fundamentos de IA y Agentes',
+    title: 'Investigación, Desarrollo y la Tesis',
     description:
-      'Conceptos básicos, historia, tipos y arquitectura de agentes inteligentes.',
+      'Comprende la importancia de la investigación y desarrollo (I+D) como motor del progreso tecnológico y social del país, y es capaz de identificar y formular un tema de tesis válido, factible, original y creativo en el área de sistemas e informática.',
   },
   {
     number: 2,
-    title: 'Estrategias de Búsqueda y Juegos',
+    title: 'Estado del Arte',
     description:
-      'Resolución de problemas mediante búsquedas y desarrollo de algoritmos para juegos.',
+      'Comprende, planifica y desarrolla el marco teórico y el estado del arte de su investigación de forma sistemática, utilizando referencias adecuadas y valorando el autoaprendizaje y el aprendizaje continuo.',
   },
   {
     number: 3,
-    title: 'Machine Learning y Deep Learning',
+    title: 'Avance de Tesis',
     description:
-      'Métodos supervisados, no supervisados, por refuerzo y redes neuronales.',
-  },
-  {
-    number: 4,
-    title: 'IA Generativa y Ética',
-    description:
-      'Modelos generativos, aplicaciones creativas e impacto ético y futuro.',
+      'Redacta y sustenta su tema, marco teórico, estado del arte de su investigación, su bosquejo de aporte y plan de actividades ante un jurado con comunicación eficaz de forma oral y escrita.',
   },
 ];
 
@@ -61,9 +55,9 @@ export const AboutSection = () => {
         </div>
         <h2 className="mt-4 text-3xl font-bold">¿De qué trata este curso?</h2>
         <p className="mt-4 text-gray-600">
-          A lo largo de 16 semanas, aprenderás desde los conceptos básicos de IA
-          y agentes hasta técnicas avanzadas en Machine Learning, Deep Learning
-          e IA Generativa.
+        A lo largo de 16 semanas, aprenderás a definir un tema de tesis en el área de sistemas e informática, 
+        desarrollar el marco teórico y realizar la investigación del estado del arte, 
+        siguiendo una metodología sistemática y fomentando el autoaprendizaje.
         </p>
       </div>
 

@@ -13,12 +13,12 @@ export const HeroSection = () => {
           className="text-4xl sm:text-5xl font-bold leading-tight bg-gradient-to-r from-gray-600 via-[#83c53c] to-[#c1ff72] bg-clip-text text-transparent"
           data-aos="fade-up"
         >
-          Inteligencia Artificial
+          Metodología de la elaboración de tesis
         </h1>
         <p className="text-gray-600" data-aos="fade-up" data-aos-delay="100">
-          Descubre los fundamentos teóricos y prácticos que te prepararán para
-          diseñar, implementar y evaluar soluciones inteligentes en distintos
-          ámbitos.
+        Aprende el desarrollo del proyecto de tesis, definiendo el tema, 
+        desarrollando si fuera necesario el marco teórico y realizando 
+        la investigación del estado del arte del problema de investigación.
         </p>
         <div data-aos="fade-up" data-aos-delay="200">
           <Link

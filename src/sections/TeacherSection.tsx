@@ -39,7 +39,7 @@ export const TeacherSection = () => {
                 <p className="text-gray-600">lguerrag1@unmsm.edu.pe</p>
               </div>
               <p className="text-gray-600">Ciclo: 7</p>
-              <p className="text-gray-600">Curso: Inteligencia Artificial</p>
+              <p className="text-gray-600">Curso: Metodología de la Elaboración de Tesis</p>
             </div>
             <div className="mt-6">
               <Link

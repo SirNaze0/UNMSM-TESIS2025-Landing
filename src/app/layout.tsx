@@ -14,33 +14,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Curso de IA | UNMSM',
+  title: 'Curso de Metodología de la elaboración de tesis | UNMSM',
   description:
-    'Curso de Inteligencia Artificial para estudiantes de la Universidad Nacional Mayor de San Marcos. Aprende fundamentos teóricos y prácticos para diseñar, implementar y evaluar soluciones inteligentes.',
-  authors: [{ name: 'Eder Gustavo Benites Pardave' }],
+    'Curso de Metodología de la elaboración de tesis para estudiantes de la Universidad Nacional Mayor de San Marcos. Aprende el desarrollo del proyecto de tesis, definiendo el tema, desarrollando si fuera necesario el marco teórico y realizando la investigación del estado del arte del problema de investigación.',
+  authors: [{ name: 'Gianmarco Gabriel Lavado Torres y Eder Gustavo Benites Pardave' }],
   keywords: [
-    'inteligencia artificial',
-    'IA',
-    'machine learning',
-    'deep learning',
-    'IA generativa',
+    'Metodología de la elaboración de tesis',
+    'Tesis',
+    'Elaboración de tesis',
+    'Metodología de la tesis',
+    'Estado del arte de la tesis',
     'UNMSM',
     'universidad',
     'curso',
   ],
   openGraph: {
     type: 'website',
-    url: 'https://unmsm-ia-2025-landing.vercel.app/',
-    title: 'Curso de Inteligencia Artificial | UNMSM',
+    url: 'https://unmsm-tesis-2025-landing.vercel.app/',
+    title: 'Curso de Metodología de la elaboración de tesis | UNMSM',
     description:
-      'Descubre los fundamentos teóricos y prácticos que te prepararán para diseñar, implementar y evaluar soluciones inteligentes en distintos ámbitos.',
+      'Aprende el desarrollo del proyecto de tesis, definiendo el tema, desarrollando si fuera necesario el marco teórico y realizando la investigación del estado del arte del problema de investigación.',
     images: ['/guerrabarrasv2.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Curso de Inteligencia Artificial | UNMSM',
+    title: 'Curso de Metodología de la elaboración de tesis | UNMSM',
     description:
-      'Curso completo de IA: desde fundamentos básicos hasta técnicas avanzadas de Deep Learning e IA Generativa.',
+      'Aprende el desarrollo del proyecto de tesis, definiendo el tema, desarrollando si fuera necesario el marco teórico y realizando la investigación del estado del arte del problema de investigación.',
     images: ['/guerrabarrasv2.png'],
   },
   icons: {
@@ -48,15 +48,15 @@ export const metadata: Metadata = {
     apple: '/logounmsm.svg',
   },
   alternates: {
-    canonical: 'https://unmsm-ia-2025-landing.vercel.app/',
+    canonical: 'https://unmsm-tesis-2025-landing.vercel.app/',
   },
   robots: {
     index: true,
     follow: true,
   },
-  creator: 'Eder Gustavo Benites Pardave',
+  creator: 'Gianmarco Gabriel Lavado Torres y Eder Gustavo Benites Pardave',
   publisher: 'Universidad Nacional Mayor de San Marcos',
-  metadataBase: new URL('https://unmsm-ia-2025-landing.vercel.app/'),
+  metadataBase: new URL('https://unmsm-tesis-2025-landing.vercel.app/'),
 };
 
 export default function RootLayout({

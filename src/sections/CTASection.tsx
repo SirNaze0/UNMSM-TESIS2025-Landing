@@ -14,21 +14,19 @@ export const CTASection = () => {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold text-black">
-            Conoce a tu Grupo de Trabajo
+            Conoce las tesis
           </h2>
           <p className="mt-4 text-gray-700">
-            Consulta la información de los grupos de trabajo, integrantes y
-            proyectos asignados en el documento compartido. Allí encontrarás
-            todos los detalles necesarios para coordinar con tu equipo.
+            Consulta la información de los temas de tesis y sus autores en el documento compartido.
           </p>
           <div className="mt-8" data-aos="fade-up" data-aos-delay="200">
             <Link
-              href="https://docs.google.com/spreadsheets/d/1NzHW1RoytIM2Jzhz6YZdyVffpY3kcYYvDvgebaV7clM/edit?gid=0#gid=0"
+              href="https://docs.google.com/spreadsheets/d/1ohT2ZJqwnJhCb_SbrDyH97cfqKyX8h8a1En7o7wW_VA/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-medium text-white hover:bg-gray-800 transition-colors"
             >
-              Ver Grupos de Trabajo
+              Ver Temas de Tesis
               <ChevronRight className="h-4 w-4" />
             </Link>
           </div>
