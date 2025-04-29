@@ -75,7 +75,7 @@ export const programData: UnitData[] = [
           'Exposición oral y escrita de artículos académicos, con énfasis en la estructuración de informes de síntesis. Desarrollo de habilidades para el análisis crítico, comunicación efectiva de hallazgos y retroalimentación constructiva en entornos de investigación.',
         variant: 'dark',
         hasGroup: true,
-        groups: [{groupNumber:'Yaipén',groupLink:'https://www.google.com/'},],
+        groups: [{groupNumber:'Yaipén Diaz, Imanol Alberto',groupLink:'https://drive.google.com/file/d/1lv2_I22k4rP4433JHgUJZi4U7JdBROvP/view?usp=sharing'},],
       },
       {
         weekNumber: 8,
