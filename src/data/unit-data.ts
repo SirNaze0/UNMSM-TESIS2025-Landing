@@ -66,7 +66,8 @@ export const programData: UnitData[] = [
         description:
           'Aplicación de inteligencia artificial en la selección de artículos académicos (análisis de títulos y resúmenes), estructuración formal de papers, estrategias para lectura crítica y síntesis efectiva de contenidos. Metodología para elaborar informes de revisión documental con rigor académico.',
         variant: 'dark',
-        hasGroup: false,
+        hasGroup: true,
+        groups: [{groupNumber:'Yaipén Diaz, Imanol Alberto',groupLink:'https://drive.google.com/file/d/1lv2_I22k4rP4433JHgUJZi4U7JdBROvP/view?usp=sharing'},],
       },
       {
         weekNumber: 7,
@@ -74,8 +75,7 @@ export const programData: UnitData[] = [
         description:
           'Exposición oral y escrita de artículos académicos, con énfasis en la estructuración de informes de síntesis. Desarrollo de habilidades para el análisis crítico, comunicación efectiva de hallazgos y retroalimentación constructiva en entornos de investigación.',
         variant: 'dark',
-        hasGroup: true,
-        groups: [{groupNumber:'Yaipén Diaz, Imanol Alberto',groupLink:'https://drive.google.com/file/d/1lv2_I22k4rP4433JHgUJZi4U7JdBROvP/view?usp=sharing'},],
+        hasGroup: false,
       },
       {
         weekNumber: 8,
