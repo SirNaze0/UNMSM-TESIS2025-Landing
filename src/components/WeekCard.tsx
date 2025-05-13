@@ -78,7 +78,7 @@ export const WeekCard = ({
                 rel="noopener noreferrer"
                 className={`mt-5 inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-medium transition-all shadow-sm ${buttonVariants[variant]} group-hover:shadow-md`}
               >
-                Ver Tesis de {group.groupNumber}
+                ver tesis {group.groupNumber}
                 <ChevronRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
               </a>
             ))}

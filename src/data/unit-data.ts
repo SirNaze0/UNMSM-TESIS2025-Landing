@@ -67,7 +67,7 @@ export const programData: UnitData[] = [
           'Aplicación de inteligencia artificial en la selección de artículos académicos (análisis de títulos y resúmenes), estructuración formal de papers, estrategias para lectura crítica y síntesis efectiva de contenidos. Metodología para elaborar informes de revisión documental con rigor académico.',
         variant: 'dark',
         hasGroup: true,
-        groups: [{groupNumber:'Yaipén Diaz, Imanol Alberto',groupLink:'https://drive.google.com/file/d/1lv2_I22k4rP4433JHgUJZi4U7JdBROvP/view?usp=sharing'},],
+        groups: [{groupNumber:'V1-PPT- Imanol Yaipen',groupLink:'https://drive.google.com/file/d/1lv2_I22k4rP4433JHgUJZi4U7JdBROvP/view?usp=sharing'},],
       },
       {
         weekNumber: 7,
@@ -75,7 +75,12 @@ export const programData: UnitData[] = [
         description:
           'Exposición oral y escrita de artículos académicos, con énfasis en la estructuración de informes de síntesis. Desarrollo de habilidades para el análisis crítico, comunicación efectiva de hallazgos y retroalimentación constructiva en entornos de investigación.',
         variant: 'dark',
-        hasGroup: false,
+        hasGroup: true,
+        groups: [
+          {groupNumber:'V1-PPT-Alvaro Blas',groupLink:'https://drive.google.com/file/d/17z5Kppo2JOrkG-w5h33bylgrOFns49d4/view'},
+          {groupNumber:'V1-PPT-Jefferson Asencios',groupLink:'https://drive.google.com/file/d/1AYlF5VZjp3UJMhnbe6rX4nuddnKTm_mu/view'},
+          {groupNumber:'V1-PPT-Marlo Mejía',groupLink:'https://drive.google.com/file/d/1gCQP5lce11PJaZCly-a9ivg1tG0phALJ/view'},
+        ],
       },
       {
         weekNumber: 8,
