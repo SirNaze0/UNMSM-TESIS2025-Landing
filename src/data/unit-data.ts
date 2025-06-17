@@ -67,7 +67,7 @@ export const programData: UnitData[] = [
           'Aplicación de inteligencia artificial en la selección de artículos académicos (análisis de títulos y resúmenes), estructuración formal de papers, estrategias para lectura crítica y síntesis efectiva de contenidos. Metodología para elaborar informes de revisión documental con rigor académico.',
         variant: 'dark',
         hasGroup: true,
-        groups: [{groupNumber:'Yaipén Diaz, Imanol Alberto',groupLink:'https://drive.google.com/file/d/1lv2_I22k4rP4433JHgUJZi4U7JdBROvP/view?usp=sharing'},],
+        groups: [{groupNumber:'Imanol Yaipén',groupLink:'https://drive.google.com/file/d/1lv2_I22k4rP4433JHgUJZi4U7JdBROvP/view?usp=sharing'},],
       },
       {
         weekNumber: 7,
@@ -75,7 +75,14 @@ export const programData: UnitData[] = [
         description:
           'Exposición oral y escrita de artículos académicos, con énfasis en la estructuración de informes de síntesis. Desarrollo de habilidades para el análisis crítico, comunicación efectiva de hallazgos y retroalimentación constructiva en entornos de investigación.',
         variant: 'dark',
-        hasGroup: false,
+        hasGroup: true,
+        groups: [{groupNumber:'Manuel Minaya',groupLink:'https://drive.google.com/drive/folders/12YjYZtWzG43ljSfCp6JGwAACEPBjF8fN?usp=sharing'},
+          {groupNumber:'Marlo Mejia',groupLink:'https://drive.google.com/drive/folders/1ceUEvLSKYPVMVWlNuhrRH7JkZwSi8HZr?usp=sharing'},
+          {groupNumber:'Ashly Chavez',groupLink:'https://drive.google.com/drive/folders/1GZpPuwWs1h6fzeWiaIMSpvC6g4M9RfT3?usp=sharing'},
+          {groupNumber:'Jefferson Asencios',groupLink:'https://drive.google.com/drive/folders/1LGGeKj3uFhGlZoJVQFUBUzRBOw5DdSdo?usp=sharing'},
+          {groupNumber:'Ashly Surichaqui',groupLink:'https://drive.google.com/drive/folders/1PgV0NJdwYRappOXrHkYow3VwAqlkMPxH?usp=sharing'},
+          {groupNumber:'Alvaro Blas',groupLink:'https://drive.google.com/drive/folders/1WKiOnc-hqYwRo6f6UPoTQurR_aNFrNHx?usp=sharing'},
+        ],
       },
       {
         weekNumber: 8,
@@ -83,7 +90,12 @@ export const programData: UnitData[] = [
         description:
           'Exposición oral y escrita de artículos académicos, con énfasis en la estructuración de informes de síntesis. Desarrollo de habilidades para el análisis crítico, comunicación efectiva de hallazgos y retroalimentación constructiva en entornos de investigación.',
         variant: 'dark',
-        hasGroup: false,
+        hasGroup: true,
+        groups: [{groupNumber:'Kevin Gonzalez',groupLink:'https://drive.google.com/drive/folders/1-n8bjVZDDBXBsr7WQF7xOPNl1fgebLFN?usp=sharing'},
+          {groupNumber:'Kevin Uscata',groupLink:'https://drive.google.com/drive/folders/1yMWsKC43h0WSwhTweX0HxirSbOs3mH7t?usp=sharing'},
+          {groupNumber:'Monica Mendoza',groupLink:'https://drive.google.com/drive/folders/1gaoWAGRXM960709wy27HZKtG8Ma-XrAJ?usp=sharing'},
+          {groupNumber:'Marilú Huarcaya',groupLink:'https://drive.google.com/drive/folders/1c7YhIxG83rglxPvocEOhPqHx0Ab1IemI?usp=sharing'},
+          {groupNumber:'Alvaro Caldas',groupLink:'https://drive.google.com/drive/folders/1VhBryjL1rLZSTcXuUx_OmG_LsGU_dW7w?usp=sharing'},],
       },
       {
         weekNumber: 9,
