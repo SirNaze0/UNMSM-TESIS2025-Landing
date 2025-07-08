@@ -102,7 +102,7 @@ export const programData: UnitData[] = [
         title: 'Presentación y evaluación crítica de artículos científicos(Parte 3)',
         description:
           'Exposición oral y escrita de artículos académicos, con énfasis en la estructuración de informes de síntesis. Desarrollo de habilidades para el análisis crítico, comunicación efectiva de hallazgos y retroalimentación constructiva en entornos de investigación.',
-        variant: 'dark',
+        variant: 'light',
         hasGroup: false,
       },
       {
@@ -110,7 +110,7 @@ export const programData: UnitData[] = [
         title: 'Revolución en Investigación Académica: IA, Síntesis Precisas y Teoría Perfeccionada',
         description:
           'Uso de inteligencia artificial para análisis y síntesis de literatura académica, elaboración de informes de investigación y refinamiento del marco teórico. Evaluación de la precisión y coherencia en la integración de fuentes.',
-        variant: 'dark',
+        variant: 'light',
         hasGroup: false,
       },
       {
@@ -118,7 +118,7 @@ export const programData: UnitData[] = [
         title: 'Evaluación y mejora de proyectos de tesis',
         description:
           'Revisión crítica de temas de investigación y estados del arte, con retroalimentación especializada para optimizar su calidad y viabilidad académica.',
-        variant: 'dark',
+        variant: 'light',
         hasGroup: false,
       },
     ],
