@@ -161,7 +161,7 @@ export const programData: UnitData[] = [
         title: 'Revisión final y evaluación del proyecto de tesis',
         description:
           'Análisis integral de los capítulos 1 al 3, retroalimentación sobre el aporte investigativo y pautas para la evaluación final. Estrategias para asegurar el cumplimiento de los estándares académicos y la originalidad del trabajo.',
-        variant: 'green',
+        variant: 'dark',
         hasGroup: true,
         groups: [{groupNumber:'Jefferson Asencios',groupLink:'https://drive.google.com/drive/folders/1F31hdMl4sMPhrcGOQXA5uCw1q0WkZ67y?usp=sharing'},
           {groupNumber:'Marlo Mejia',groupLink:'https://drive.google.com/drive/folders/1W1VaxBBFJucxz66oB4JF5vUzK98RX_u-?usp=sharing'},],
@@ -180,7 +180,7 @@ export const programData: UnitData[] = [
         groups: [{groupNumber:'Kevin Uscata',groupLink:'https://drive.google.com/drive/folders/1q3sdNMAHqpnjSWFbe2kF6wMTqQl3T7-E?usp=sharing'},
           {groupNumber:'Alvaro Caldas',groupLink:'https://drive.google.com/drive/folders/1bd6JHZ3kBbU-dn9Sr9Mhmj9hkL2jAohH?usp=sharing'},
           {groupNumber:'Alvaro Blas',groupLink:'https://drive.google.com/drive/folders/1cZduO1UdHJ5e-EWCuChMrlh-MhLdvp2m?usp=sharing'},],
-        variant: 'light',
+        variant: 'dark',
       },
     ],
     columns: 1,
