@@ -186,6 +186,7 @@ export const programData: UnitData[] = [
           {groupNumber:'Marilú Huarcaya',groupLink:'https://drive.google.com/drive/folders/1fBGEuZY5HnpN6MiYWvAlTVM-9_voUYsJ?usp=sharing'},
           {groupNumber:'Ashly Chavez',groupLink:'https://drive.google.com/drive/folders/1pSztpu0pJ7uWg7Mls-O5Z7zDTHCWt_23?usp=sharing'},
           {groupNumber:'Kevin Gonzalez',groupLink:'https://drive.google.com/drive/folders/1V9HF49ha1mVKyPWASF8EmdBaiBcnjHeS?usp=sharing'},
+          {groupNumber:'Gianmarco Lavado',groupLink:'https://drive.google.com/drive/folders/1PxycEa0phCnxkIuNlSsh87tnZzEqQ8wB?usp=sharing'},
           ],
         variant: 'dark',
       },
